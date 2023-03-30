@@ -1,10 +1,4 @@
-<a href="https://github.com/newrelic/open-source-office/blob/master/examples/categories/index.md#category-new-relic-experimental">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/newrelic/open-source-office/master/examples/categories/images/dark/Experimental.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/newrelic/open-source-office/master/examples/categories/images/Experimental.png">
-  <img alt="New Relic open source - Experimental" src="https://raw.githubusercontent.com/newrelic/open-source-office/master/examples/categories/images/Experimental.png">
-</picture>
-</a>
+[![Community Project header](https://github.com/newrelic/opensource-website/raw/master/src/images/categories/Example_Code.png)](https://opensource.newrelic.com/oss-category/#community-project)
 
 # Terraform for New Relic Service Levels
 
@@ -69,7 +63,7 @@ key | description
 `feature_name` | short text description of your capability feature (a.k.a Search by customer ID, username login, submit application, etc...)
 `app_name` | must match exactly the application name in New Relic
 `app_guid` | your app_name guid found in your New Relic app metadata/tags
-`request_uri` | NRQL LIKE string used to identify the transaction that supports your feature/capability in this app
+`request_uri` | NRQL LIKE string used to identify the transaction that supports your feature/capability in this app, for example "SELECT * WHERE request.uri LIKE **`'/api/login/%`**'"
 `threshold_latency` | the threshold value in seconds to set the service level with the deifned `request_uri`. the service level will be set at 95% tolerance over a 7 day period
 `threshold_success` | the success rate threshold for the `request_uri`. the service level will be set at that tolerance over a 7 day period for "error free" transactions.
 
