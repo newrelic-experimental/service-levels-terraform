@@ -1,7 +1,26 @@
 
+#
+# products_map and capabilities_map are important as they are
+# used to define SLO tags and naming conventions.
+#
+
+
+#
+# Define your product names with numeric keys that will be used 
+# in your capabilities map below.
+#
+
 products_map = {
   "0" : "OMA"
 }
+
+#
+# Define your capability names with numeric keys that will be used 
+# in your capabilities map below.
+# Map capabilities to your numerica product keys. 
+# In the example below, "Customers" and "Accounts" are mapped
+# to the "OMA" product key.
+#
 
 capabilities_map = {
   "0" : {
