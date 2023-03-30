@@ -21,11 +21,17 @@ This terraform module is used in conjuction with [New Relic Observability Maturi
 
 ## Instructions
 
+Requires [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+
 1. Clone repo
 2. Copy `main-example.tf` to `main.tf`
 3. Copy `terraform.tfvars.example` to `terraform.tfvars`
 4. Run `terraform init`
 5. Update your newrelic `account_id` and `api_key` in `main.tf` shown below
+6. Update the `terraform.tfvars` file with your own capabilities config
+7. Run `terraform plan` to test changes.
+8. Run `terraform apply` to apply your config.
+9. Run `terraform destroy` to remove all items created by your config.
 
 ``` terraform
 provider "newrelic" {
