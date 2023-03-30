@@ -1,0 +1,64 @@
+
+products_map = {
+  "0" : "OMA"
+}
+
+capabilities_map = {
+  "0" : {
+    "0" : "Customers",
+    "1" : "Accounts"
+  }
+}
+
+
+capabilities = [
+  {
+    unique_name       = "OMA Customers Search SLO"
+    account_id        = 3805184
+    product_name      = "0"
+    capability_name   = "0"
+    feature_name      = "Search customer by name"
+    app_name          = "api-gateway"
+    app_guid          = "MzgwNTE4NHxBUE18QVBQTElDQVRJT058MTA2NDk1ODc2NQ"
+    request_uri       = "/api/customers/search/%/%"
+    threshold_latency = 0.100
+    threshold_success = 98
+  },
+  {
+    unique_name       = "OMA Accounts Search SLO"
+    account_id        = 3805184
+    product_name      = "0"
+    capability_name   = "1"
+    feature_name      = "Search by account id"
+    app_name          = "api-gateway"
+    app_guid          = "MzgwNTE4NHxBUE18QVBQTElDQVRJT058MTA2NDk1ODc2NQ"
+    request_uri       = "/api/accounts/search/%"
+    threshold_latency = 0.100
+    threshold_success = 98
+  },
+  {
+    unique_name       = "OMA Customer Get All Details"
+    account_id        = 3805184
+    product_name      = "0"
+    capability_name   = "0"
+    feature_name      = "Get all customer details"
+    app_name          = "api-gateway"
+    app_guid          = "MzgwNTE4NHxBUE18QVBQTElDQVRJT058MTA2NDk1ODc2NQ"
+    request_uri       = "/api/customer/all/%"
+    threshold_latency = 0.200
+    threshold_success = 96
+  },
+  {
+    unique_name       = "OMA Customer Get Profile"
+    account_id        = 3805184
+    product_name      = "0"
+    capability_name   = "0"
+    feature_name      = "Get customer profile"
+    app_name          = "api-gateway"
+    app_guid          = "MzgwNTE4NHxBUE18QVBQTElDQVRJT058MTA2NDk1ODc2NQ"
+    request_uri       = "/api/customers/profile/search/%"
+    threshold_latency = 0.100
+    threshold_success = 98
+  }
+]
+
