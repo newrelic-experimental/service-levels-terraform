@@ -18,7 +18,7 @@ This terraform module is used in conjuction with [New Relic Observability Maturi
 Requires [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
 1. Clone repo
-2. Copy `main-example.tf` to `main.tf`
+2. Copy `main.tf.example` to `main.tf`
 3. Copy `terraform.tfvars.example` to `terraform.tfvars`
 4. Run `terraform init`
 5. Update your newrelic `account_id` and `api_key` in `main.tf` shown below

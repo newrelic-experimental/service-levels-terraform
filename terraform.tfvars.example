@@ -21,6 +21,11 @@ products_map = {
 # In the example below, "Customers" and "Accounts" are mapped
 # to the "OMA" product key.
 #
+#
+# The service level configs below require an ENTITY_GUID.  Every New Relic entity has a GUID.
+# You may find an entity's GUID using in the New Relic UI by clicking the Metadata icon on the
+# entity Summary page.  For most entities, its GUID is reported as the attribute entityGuid.
+# For workloads, it's workloadGuid.  You can run NRQL queries to find entities by their GUID.
 
 capabilities_map = {
   "0" : {
@@ -33,48 +38,48 @@ capabilities_map = {
 capabilities = [
   {
     unique_name       = "OMA Customers Search SLO"
-    account_id        = 3805184
+    account_id        = 0000000
     product_name      = "0"
     capability_name   = "0"
     feature_name      = "Search customer by name"
     app_name          = "api-gateway"
-    app_guid          = "MzgwNTE4NHxBUE18QVBQTElDQVRJT058MTA2NDk1ODc2NQ"
+    app_guid          = "<ENTITY_GUID>"
     request_uri       = "/api/customers/search/%/%"
     threshold_latency = 0.100
     threshold_success = 98
   },
   {
     unique_name       = "OMA Accounts Search SLO"
-    account_id        = 3805184
+    account_id        = 0000000
     product_name      = "0"
     capability_name   = "1"
     feature_name      = "Search by account id"
     app_name          = "api-gateway"
-    app_guid          = "MzgwNTE4NHxBUE18QVBQTElDQVRJT058MTA2NDk1ODc2NQ"
+    app_guid          = "<ENTITY_GUID>"
     request_uri       = "/api/accounts/search/%"
     threshold_latency = 0.100
     threshold_success = 98
   },
   {
     unique_name       = "OMA Customer Get All Details"
-    account_id        = 3805184
+    account_id        = 0000000
     product_name      = "0"
     capability_name   = "0"
     feature_name      = "Get all customer details"
     app_name          = "api-gateway"
-    app_guid          = "MzgwNTE4NHxBUE18QVBQTElDQVRJT058MTA2NDk1ODc2NQ"
+    app_guid          = "<ENTITY_GUID>"
     request_uri       = "/api/customer/all/%"
     threshold_latency = 0.200
     threshold_success = 96
   },
   {
     unique_name       = "OMA Customer Get Profile"
-    account_id        = 3805184
+    account_id        = 0000000
     product_name      = "0"
     capability_name   = "0"
     feature_name      = "Get customer profile"
     app_name          = "api-gateway"
-    app_guid          = "MzgwNTE4NHxBUE18QVBQTElDQVRJT058MTA2NDk1ODc2NQ"
+    app_guid          = "<ENTITY_GUID>"
     request_uri       = "/api/customers/profile/search/%"
     threshold_latency = 0.100
     threshold_success = 98
