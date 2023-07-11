@@ -22,10 +22,12 @@ products_map = {
 # to the "OMA" product key.
 #
 #
-# The service level configs below require an ENTITY_GUID.  Every New Relic entity has a GUID.
-# You may find an entity's GUID using in the New Relic UI by clicking the Metadata icon on the
+# The capbilities entries below require an entity guid.  Every New Relic entity has a GUID.
+# You may find an entity's GUID in the New Relic UI by clicking the Metadata icon on the
 # entity Summary page.  For most entities, its GUID is reported as the attribute entityGuid.
 # For workloads, it's workloadGuid.  You can run NRQL queries to find entities by their GUID.
+# Finally for a more scalable programmatic approach you can use the Nergraph entities API:
+# https://docs.newrelic.com/docs/apis/nerdgraph/examples/nerdgraph-entities-api-tutorial/
 
 capabilities_map = {
   "0" : {
